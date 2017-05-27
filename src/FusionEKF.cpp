@@ -32,7 +32,7 @@ FusionEKF::FusionEKF() {
         0, 0, 0.09;
 
   H_laser_ << 1, 0, 0, 0,
-          0, 0, 0, 0;
+          0, 1, 0, 0;
 
   // state transition matrix
   ekf_.F_ = MatrixXd(4, 4);
